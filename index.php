@@ -33,14 +33,7 @@
     
     #TODO
 
-    * stylistyka ogólna strony
-    * utworzenie grup
-    * admin.php (Połączenie do bazdy danych, fetchowanie danych z bd)
-    * dodać namespace (zamiast require_once)
-    * dodać możliwość wyświetlania kont
-    * możliwośc zgłoszenia
-    * możliwość powiadomień
-    * logika programu (mniej więcej ukończone)
+    * Wrócić kiedyś do tego projektu i go ulepszyć
     
     #TODO skończone
     
@@ -57,6 +50,14 @@
     * login.php (Połączenie do bazdy danych, fetchowanie danych z bd)
     * utworzenie katalogów strony
     * baza danych (cała) 
+    * stylistyka ogólna strony
+    * utworzenie grup
+    * admin.php (Połączenie do bazdy danych, fetchowanie danych z bd)
+    * dodać namespace (zamiast require_once)
+    * dodać możliwość wyświetlania kont
+    * możliwośc zgłoszenia
+    * możliwość powiadomień
+    * logika programu (mniej więcej ukończone)
 
 
 
@@ -89,4 +90,5 @@ if($_SESSION["isLogged"] !== true)
 <body>
     
 </body>
+
 </html>
