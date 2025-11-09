@@ -1,0 +1,76 @@
+/* Wrapper ograniczający zakres stylów */
+.header-admin-wrapper header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #007bff;
+    padding: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.header-admin-wrapper .left,
+.header-admin-wrapper .center,
+.header-admin-wrapper .right {
+    width: 33%;
+    display: flex;
+    align-items: center;
+}
+
+.header-admin-wrapper .left {
+    justify-content: flex-start;
+    padding-left: 50px;
+}
+
+.header-admin-wrapper .center {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-admin-wrapper .right {
+    justify-content: flex-end;
+    padding-right: 50px;
+    gap: 10px;
+}
+
+.header-admin-wrapper h1 {
+    margin: 0;
+    font-size: calc(20px + 0.5vw);
+    transition: font-size 0.3s ease;
+    text-align: center;
+    user-select: none;
+}
+
+/* Powiększenie tekstu w h1, gdy details jest otwarte */
+.header-admin-wrapper .details-wrapper:has(details[open]) h1 {
+    font-size: calc(28px + 2rem);
+}
+
+.header-admin-wrapper .details-wrapper:has(details[open]) .right a {
+    font-size: calc(28px + 0.5rem);
+}
+
+
+.header-admin-wrapper details {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    user-select: none;
+    color: black;
+    font-size: 18px;
+}
+
+.header-admin-wrapper a.logout-button {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    user-select: none;
+}
